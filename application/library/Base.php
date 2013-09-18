@@ -125,7 +125,7 @@ class Base
 	}
 	
 	/**
-	 * left join 以joinItem为key返回数组
+	 * join 以joinItem为key返回数组
 	 * @param string $joinItem
 	 * @param string $where
 	 * @param unknown $fields
