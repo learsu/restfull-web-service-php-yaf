@@ -125,7 +125,7 @@ class Base
 	}
 	
 	/**
-	 * join 以joinItem为key返回数组
+	 * left join 以joinItem为key返回数组
 	 * @param string $joinItem
 	 * @param string $where
 	 * @param unknown $fields
@@ -169,7 +169,7 @@ class Base
 	 * @param string $limit
 	 * @return array
 	 */
-	public function find($where = '', $fields = array(), $order = '', $limit = 200)
+	public function iter($where = '', $fields = array(), $order = '', $limit = 200)
 	{
 		//组合需要的字段名
 		$fields == '' && $fields = array();
@@ -203,7 +203,7 @@ class Base
 	 * @param string $order
 	 * @return array
 	 */
-	public function fetch($where, $fields = array(), $order = '')
+	public function find($where, $fields = array(), $order = '')
 	{
 		//组合需要的字段名
 		$fields == '' && $fields = array();
